@@ -1,6 +1,10 @@
 # throttle
 
 [![Build Status](https://github.com/anilsenay/throttle/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/features/actions)
+[![Coverage Status](https://img.shields.io/codecov/c/github/anilsenay/throttle/master.svg)](https://codecov.io/gh/anilsenay/throttle)
+[![Go Report Card](https://goreportcard.com/badge/github.com/anilsenay/throttle)](https://goreportcard.com/report/github.com/anilsenay/throttle)
+[![Go Doc](https://godoc.org/github.com/anilsenay/throttle?status.svg)](https://godoc.org/github.com/anilsenay/throttle)
+[![Release](https://img.shields.io/github/release/anilsenay/throttle.svg?style=flat-square)](https://github.com/anilsenay/throttle/releases)
 
 `throttle` is a Go package that provides a simple and efficient way to throttle operations in your Go applications. It allows you to limit the rate at which operations are performed, which can be useful for rate limiting API calls, controlling resource usage, or managing concurrency.
 
