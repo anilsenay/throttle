@@ -59,7 +59,7 @@ This example will process the numbers slice at a rate of 2 items per second.
 
 ### throttle package
 
-#### func [Limit]()
+#### func [Limit](https://github.com/anilsenay/throttle/blob/master/throttle.go#L10)
 
 `func Limit[Slice ~[]E, E any](s Slice, ops int, interval time.Duration) iter.Seq2[int, E]`
 
@@ -69,7 +69,7 @@ This example will process the numbers slice at a rate of 2 items per second.
 
 ### throttler package
 
-#### type [Throttler]()
+#### type [Throttler](https://github.com/anilsenay/throttle/blob/master/throttler/throttler.go#L8)
 
 ```go
 type Throttler struct {
@@ -85,25 +85,25 @@ type Throttler struct {
 
 The Throttler struct provides low-level control over throttling. It can be used directly for more fine-grained throttling needs.
 
-#### func [New]()
+#### func [New](https://github.com/anilsenay/throttle/blob/master/throttler/throttler.go#L18)
 
 `func New(ops int, interval time.Duration) *Throttler`
 
 Creates a new Throttler with the specified number of operations per interval.
 
-#### func (\*Throttler) [Allow]()
+#### func (\*Throttler) [Allow](https://github.com/anilsenay/throttle/blob/master/throttler/throttler.go#L51)
 
 `func (t *Throttler) Allow() bool`
 
 Allow checks if an operation is permitted based on the current throttling state. It returns `true` if the operation is allowed, and `false` otherwise.
 
-#### func (\*Throttler) [Stop]()
+#### func (\*Throttler) [Stop](https://github.com/anilsenay/throttle/blob/master/throttler/throttler.go#L30)
 
 `func (t *Throttler) Stop()`
 
 Stops the throttler and releases associated resources.
 
-#### func (\*Throttler) [IsDone]()
+#### func (\*Throttler) [IsDone](https://github.com/anilsenay/throttle/blob/master/throttler/throttler.go#L26)
 
 `func (t *Throttler) IsDone() bool`
 
