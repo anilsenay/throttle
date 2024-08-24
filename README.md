@@ -1,5 +1,7 @@
 # throttle
 
+[![Build Status](https://github.com/anilsenay/throttle/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/features/actions)
+
 `throttle` is a Go package that provides a simple and efficient way to throttle operations in your Go applications. It allows you to limit the rate at which operations are performed, which can be useful for rate limiting API calls, controlling resource usage, or managing concurrency.
 
 ## Features
@@ -18,6 +20,8 @@ go get github.com/anilsenay/throttle
 ```
 
 ## Usage
+
+**NOTE: You've got to have Go version 1.23 for using the Limit function**
 
 Here's a basic example of how to use the `Limit` function:
 
