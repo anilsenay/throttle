@@ -11,6 +11,10 @@
 - Configurable operations per interval
 - Uses efficient channels and tickers for throttling
 
+## Prerequirement
+
+- Go 1.23 ❗
+
 ## Installation
 
 To install the throttle package, use the following command:
@@ -20,8 +24,6 @@ go get github.com/anilsenay/throttle
 ```
 
 ## Usage
-
-**NOTE: You've got to have Go version 1.23 for using the Limit function**
 
 Here's a basic example of how to use the `Limit` function:
 
